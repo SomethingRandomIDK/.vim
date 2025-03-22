@@ -1,0 +1,10 @@
+# Plugin Folder
+plugged/
+autoload/
+
+# Netrw File
+.netrwhist
+
+# Tmp folder for swap files
+tmp/
+
