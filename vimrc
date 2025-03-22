@@ -63,7 +63,8 @@ let g:netrw_liststyle=3
 
 let mapleader=" "
 nnoremap <Leader>e :Ex<cr>
-nnoremap <Leader>ff :find 
+" Started using fzf so no need for this anymore
+" nnoremap <Leader>ff :find 
 nnoremap <Leader>v :!inlyne %<cr>
 
 " Surround functions
@@ -114,6 +115,9 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'mbbill/undotree'
 
 Plug 'vim-airline/vim-airline'
 
@@ -170,6 +174,14 @@ endfunction
 
 " Symbol renaming
 nmap <leader>rn <Plug>(coc-rename)
+
+" Fuzzy Finder
+nnoremap <leader>ff :GFiles<cr>
+nnoremap <leader>fg :Rg<cr>
+nnoremap <leader>fb :Buffers<cr>
+
+" Undo tree
+nnoremap <leader>u :UndotreeToggle<cr>
 
 let g:airline_powerline_fonts = 1
 
