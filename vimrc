@@ -6,6 +6,10 @@ set updatetime=300
 set nobackup
 set nowritebackup
 
+" Persistent Undo and setting the undo directory to the tmp folder
+set undofile
+set undodir^=$HOME/.vim/tmp//
+
 " Will let us change buffers without saving
 set hidden
 " Will save the swap file to a separate temp folder instead of leaving them all
@@ -120,6 +124,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'mbbill/undotree'
 
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/everforest'
@@ -184,6 +189,7 @@ nnoremap <leader>fb :Buffers<cr>
 nnoremap <leader>u :UndotreeToggle<cr>
 
 let g:airline_powerline_fonts = 1
+let g:airline_theme='jellybeans'
 
 set bg=dark
 
