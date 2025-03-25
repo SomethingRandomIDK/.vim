@@ -52,7 +52,7 @@ set scrolloff=8
 syntax on
 filetype plugin indent on
 
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 set wildmode=longest,list,full
 
@@ -69,7 +69,7 @@ let mapleader=" "
 nnoremap <Leader>e :Ex<cr>
 " Started using fzf so no need for this anymore
 " nnoremap <Leader>ff :find 
-nnoremap <Leader>v :!inlyne %<cr>
+" nnoremap <Leader>v :!inlyne %<cr>
 
 " Surround functions
 vnoremap <Leader>s" c"<C-R>""<esc>
