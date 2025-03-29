@@ -44,6 +44,7 @@ set termguicolors
 set laststatus=2
 
 au BufRead,BufNewFile *.md setlocal textwidth=80
+au BufRead,BufNewFile *.tex setlocal textwidth=80
 
 set wrap
 set scrolloff=8
@@ -52,7 +53,7 @@ set scrolloff=8
 syntax on
 filetype plugin indent on
 
-set clipboard=unnamed
+" set clipboard=unnamed
 
 set wildmode=longest,list,full
 
