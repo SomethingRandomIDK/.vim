@@ -63,7 +63,7 @@ set wildoptions=pum
 set wildmenu
 
 let g:netrw_banner=0
-let g:netrw_liststyle=3
+" let g:netrw_liststyle=3
 
 let mapleader=" "
 nnoremap <Leader>e :Ex<cr>
