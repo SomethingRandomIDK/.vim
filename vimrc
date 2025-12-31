@@ -26,8 +26,10 @@ set smartcase
 set ignorecase
 set incsearch
 
+set expandtab
 set smartindent
 set autoindent
+set tabstop=4
 set shiftwidth=4
 set smarttab
 set softtabstop=4
@@ -44,6 +46,7 @@ set termguicolors
 set laststatus=2
 
 au BufRead,BufNewFile *.md setlocal textwidth=80
+au BufRead,BufNewFile *.tex setlocal textwidth=80
 
 set wrap
 set scrolloff=8
@@ -52,7 +55,7 @@ set scrolloff=8
 syntax on
 filetype plugin indent on
 
-set clipboard=unnamed
+" set clipboard=unnamed
 
 set wildmode=longest,list,full
 
